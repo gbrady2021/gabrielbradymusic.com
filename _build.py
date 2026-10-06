@@ -1,6 +1,9 @@
 """Regenerates index.html, film/, records/ and press/ (press list lives in _press.html). Run: python3 _build.py"""
 import os
 SITE = os.path.dirname(os.path.abspath(__file__))
+# Version the stylesheet URL so browsers fetch new CSS right after a change.
+import hashlib
+CSS_V = hashlib.md5(open(os.path.join(SITE, "style.css"), "rb").read()).hexdigest()[:8]
 BIFF = "https://www.biff.kr/eng/html/program/prog_view.asp?idx=84111&amp;c_idx=431"
 
 def head(title, desc, image, path):
@@ -20,7 +23,7 @@ def head(title, desc, image, path):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/style.css?v={CSS_V}">
 </head>
 <body>
 
