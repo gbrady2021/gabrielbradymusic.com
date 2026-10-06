@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gabriel Brady · Composer &amp; Pianist</title>
+  <meta name="description" content="Gabriel Brady is a composer and pianist based in Brooklyn, New York.">
+
+  <!-- Link previews (iMessage, Instagram, etc.) -->
+  <meta property="og:title" content="Gabriel Brady">
+  <meta property="og:description" content="Composer &amp; Pianist · Brooklyn, NY">
+  <meta property="og:url" content="https://gabrielbradymusic.com">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231c1b19'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' text-anchor='middle' fill='%23f6f3ee'%3EGB%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f6f3ee;
+      --ink: #1c1b19;
+      --muted: #6f6a62;
+      --rule: #d9d3c9;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141412;
+        --ink: #ece8e1;
+        --muted: #9a948a;
+        --rule: #33312d;
+      }
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body { height: 100%; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Inter", system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      max-width: 560px;
+      margin: 0 auto;
+      padding: 64px 24px;
+    }
+
+    h1 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-weight: 500;
+      font-size: clamp(3rem, 11vw, 4.75rem);
+      line-height: 1;
+      letter-spacing: -0.01em;
+    }
+
+    .role {
+      margin-top: 18px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid var(--rule);
+      margin: 40px 0 32px;
+      width: 48px;
+    }
+
+    .listen {
+      margin-bottom: 32px;
+    }
+    .listen iframe {
+      width: 100%;
+      border: 0;
+      border-radius: 12px;
+    }
+
+    ul.links {
+      list-style: none;
+      display: grid;
+      gap: 14px;
+    }
+    ul.links a {
+      color: var(--ink);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: baseline;
+      gap: 14px;
+    }
+    ul.links .label {
+      display: inline-block;
+      min-width: 92px;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    ul.links .value {
+      border-bottom: 1px solid var(--rule);
+      transition: border-color 0.15s ease;
+    }
+    ul.links a:hover .value,
+    ul.links a:focus-visible .value {
+      border-color: var(--ink);
+    }
+    a:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; border-radius: 2px; }
+
+    @media (max-width: 480px) {
+      ul.links { gap: 18px; }
+      ul.links a { flex-direction: column; gap: 2px; }
+      ul.links .value { overflow-wrap: anywhere; }
+    }
+
+    footer {
+      max-width: 560px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 24px 32px;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Gabriel Brady</h1>
+    <p class="role">Composer &amp; Pianist · Brooklyn, NY</p>
+
+    <hr>
+
+    <div class="listen">
+      <iframe title="Day-blind on Spotify" src="https://open.spotify.com/embed/album/3zYn0mRzXllVD0f8KuTODS?utm_source=generator" height="152" loading="lazy" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+
+    <ul class="links">
+      <li>
+        <a href="https://bfan.link/dayblind" target="_blank" rel="noopener">
+          <span class="label">Listen</span>
+          <span class="value">Day-blind (2025)</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/gabrielbradymusic/" target="_blank" rel="noopener">
+          <span class="label">Instagram</span>
+          <span class="value">@gabrielbradymusic</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://linktr.ee/gabrielbrady" target="_blank" rel="noopener">
+          <span class="label">Links</span>
+          <span class="value">linktr.ee/gabrielbrady</span>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:gabriel@gabrielbradymusic.com">
+          <span class="label">Email</span>
+          <span class="value">gabriel@gabrielbradymusic.com</span>
+        </a>
+      </li>
+    </ul>
+  </main>
+
+  <footer>© 2026 Gabriel Brady</footer>
+</body>
+</html>
