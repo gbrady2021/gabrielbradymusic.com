@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  background: #fff;
+  color: #1f1f1f;
+  font-family: "Crimson Text", Georgia, serif;
+  font-size: 17px;
+  line-height: 1.7;
+  text-align: center;
+}
+a { color: inherit; }
+
+h1 {
+  margin: 44px 24px 6px;
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+h1 a { text-decoration: none; }
+
+nav { margin: 0 24px 34px; }
+nav a { margin: 0 11px; text-decoration: none; }
+nav a[aria-current="page"] { text-decoration: underline; }
+
+.hero { display: block; margin: 0 auto; max-width: calc(100% - 48px); }
+.hero img { display: block; width: 100%; height: auto; }
+.hero.poster { width: 460px; }
+.hero.cover { width: 540px; }
+
+p { margin: 18px 24px 0; }
+
+.reel {
+  width: 760px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto 40px;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+.reel iframe { display: block; width: 100%; height: 100%; border: 0; }
+
+.list { margin: 0 24px; }
+.list h2 {
+  margin: 0 0 2px;
+  font-size: 17px;
+  font-weight: 400;
+  font-style: italic;
+}
+.list h2 + ul { margin-bottom: 24px; }
+.list ul { list-style: none; margin: 0; padding: 0; }
+.nowrap { white-space: nowrap; }
+
+footer { margin-top: 48px; }
+footer p { margin-top: 0; }
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin: 28px 0 64px;
+}
+.icons a { display: block; width: 20px; height: 20px; }
+.icons svg { display: block; width: 100%; height: 100%; }
+
+@media (max-width: 600px) {
+  h1 { font-size: 32px; margin: 32px 24px 4px; }
+  nav { margin-bottom: 26px; }
+  nav a { margin: 0 8px; }
+}
