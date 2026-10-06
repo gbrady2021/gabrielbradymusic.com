@@ -31,7 +31,7 @@ def head(title, desc, image, path):
 '''
 
 def nav(current):
-    items = [("Film", "/film/"), ("Records", "/records/"), ("Press", "/press/"), ("Contact", "mailto:hello@gabrielbradymusic.com")]
+    items = [("Scores", "/scores/"), ("Releases", "/releases/"), ("Press", "/press/"), ("Contact", "mailto:hello@gabrielbradymusic.com")]
     cur = ' aria-current="page"'
     links = "\n".join(
         f'  <a href="{href}"{cur if name == current else ""}>{name}</a>'
@@ -74,7 +74,7 @@ page("/", "Gabriel Brady", "Composer. Original score for Hinotama: Ball of Fire,
 Vision Asia, <span class="nowrap">Busan International Film Festival 2026.</span></p>
 ''')
 
-page("/film/", "Film · Gabriel Brady", "Film scores by Gabriel Brady.", "hinotama.jpg", "Film", f'''
+page("/scores/", "Scores · Gabriel Brady", "Film scores by Gabriel Brady.", "hinotama.jpg", "Scores", f'''
 <!-- Film reel: paste the Vimeo/YouTube embed URL into src, then delete `hidden`. -->
 <div class="reel" hidden>
   <iframe src="" title="Film reel" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
@@ -93,7 +93,7 @@ page("/film/", "Film · Gabriel Brady", "Film scores by Gabriel Brady.", "hinota
 </section>
 ''')
 
-page("/records/", "Records · Gabriel Brady", "Day-blind out now on Tonal Union.", "day-blind.jpg", "Records", '''
+page("/releases/", "Releases · Gabriel Brady", "Day-blind out now on Tonal Union.", "day-blind.jpg", "Releases", '''
 <a class="hero cover" href="https://bfan.link/dayblind"><img src="/day-blind.jpg" width="1200" height="1200" alt="Day-blind album cover"></a>
 
 <p><a href="https://bfan.link/dayblind"><i>Day-blind</i></a> out now on Tonal Union.</p>
@@ -110,3 +110,11 @@ page("/press/", "Press · Gabriel Brady", "Press for Gabriel Brady.", "day-blind
 {PRESS.strip()}
 </section>
 ''')
+
+# /film/ and /records/ were the original page names; send visitors on to the new ones.
+for old, new in [("film", "/scores/"), ("records", "/releases/")]:
+    os.makedirs(os.path.join(SITE, old), exist_ok=True)
+    open(os.path.join(SITE, old, "index.html"), "w").write(
+        f'<!doctype html><meta charset="utf-8"><title>Gabriel Brady</title>'
+        f'<link rel="canonical" href="https://gabrielbradymusic.com{new}">'
+        f'<meta http-equiv="refresh" content="0; url={new}">\n')
