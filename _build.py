@@ -31,7 +31,7 @@ def head(title, desc, image, path):
 '''
 
 def nav(current):
-    items = [("Scores", "/scores/"), ("Releases", "/releases/"), ("Press", "/press/"), ("Contact", "mailto:hello@gabrielbradymusic.com")]
+    items = [("Scores", "/scores/"), ("Releases", "/releases/"), ("Press", "/press/"), ("Info", "/info/")]
     cur = ' aria-current="page"'
     links = "\n".join(
         f'  <a href="{href}"{cur if name == current else ""}>{name}</a>'
@@ -108,6 +108,14 @@ PRESS = open(os.path.join(SITE, "_press.html")).read() if os.path.exists(os.path
 page("/press/", "Press · Gabriel Brady", "Press for Gabriel Brady.", "day-blind.jpg", "Press", f'''
 <section class="list">
 {PRESS.strip()}
+</section>
+''')
+
+page("/info/", "Info · Gabriel Brady", "Gabriel Brady is a composer, pianist, producer and recording artist from Alexandria, Virginia.", "hinotama.jpg", "Info", f'''
+<section class="bio">
+<p>Gabriel Brady is a prize-winning composer, pianist, producer and recording artist from Alexandria, Virginia, based in Brooklyn.</p>
+<p>He composed the score for <a href="{BIFF}"><i>Hinotama: Ball of Fire</i></a>, the debut feature from writer-director Takenoshin Yaza, which had its world premiere in the Vision Asia section of the 2026 Busan International Film Festival. The film was made with the Venice Grand Jury Prize-winning production and cinematography team behind <i>Evil Does Not Exist</i>, alongside members of the production team of the Oscar-winning <i>Drive My Car</i>. He is now scoring <a href="https://www.meanttobemaddie.com/"><i>Meant To Be Maddie</i></a>, a feature documentary directed by Anna Clare Spelman.</p>
+<p>His debut album, <a href="/releases/"><i>Day-blind</i></a>, was released in 2025 by Tonal Union, the U.K. independent ambient-jazz label he signed with in 2023. It was named among NPR\u2019s best new albums of its release week, featured by Flow State, and played on BBC Radio 6 Music, BBC Radio 3 and NTS.</p>
 </section>
 ''')
 
