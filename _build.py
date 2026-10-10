@@ -119,8 +119,8 @@ page("/press/", "Press · Gabriel Brady", "Press for Gabriel Brady.", "day-blind
 page("/info/", "Info · Gabriel Brady", "Gabriel Brady is a composer, pianist, producer and recording artist from Alexandria, Virginia.", "hinotama.jpg", "Info", f'''
 <section class="bio">
 <p>Gabriel Brady is a prize-winning composer, pianist, producer and recording artist from Alexandria, Virginia, based in Brooklyn.</p>
-<p>He composed the score for <a href="{BIFF}"><i>Hinotama: Ball of Fire</i></a>, the debut feature from writer-director Takenoshin Yaza, which had its world premiere in the Vision Asia section of the 2026 Busan International Film Festival. The film was made with the Venice Grand Jury Prize-winning production and cinematography team behind <i>Evil Does Not Exist</i>, alongside members of the production team of the Oscar-winning <i>Drive My Car</i>. He is now scoring <a href="https://www.meanttobemaddie.com/"><i>Meant To Be Maddie</i></a>, a feature documentary directed by Anna Clare Spelman.</p>
-<p>His debut album, <a href="/recordings/"><i>Day-blind</i></a>, was released in 2025 by Tonal Union, the U.K. independent ambient-jazz label he signed with in 2023. It was named among NPR\u2019s best new albums of its release week, featured by Flow State, and played on BBC Radio 6 Music, BBC Radio 3 and NTS.</p>
+<p>He composed the score for <a href="{BIFF}"><i>Hinotama: Ball of Fire</i></a>, the debut feature from writer-director Takenoshin Yaza, which had its world premiere at the 2026 Busan International Film Festival and was shot by Yoshio Kitagawa, cinematographer of Ryusuke Hamaguchi\u2019s <i>Evil Does Not Exist</i> (Grand Jury Prize, Venice 2023). He is now scoring <a href="https://www.meanttobemaddie.com/"><i>Meant To Be Maddie</i></a>, a feature documentary directed by Anna Clare Spelman.</p>
+<p>His debut album, <a href="/recordings/"><i>Day-blind</i></a>, was released in 2025 by Tonal Union and was named among NPR\u2019s best new albums of its release week, with a feature in Flow State and airplay on BBC Radio 6 Music, BBC Radio 3 and NTS.</p>
 </section>
 ''')
 
