@@ -80,6 +80,12 @@ page("/scores/", "Scores · Gabriel Brady", "Film scores by Gabriel Brady.", "hi
   <iframe src="" title="Film reel" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+<!-- Official Busan 2026 trailer for Hinotama (BIFF YouTube channel). -->
+<figure class="video">
+  <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/PPyEm6dh26w?rel=0" title="Hinotama: Ball of Fire, trailer" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+  <figcaption><a href="{BIFF}"><i>Hinotama: Ball of Fire</i></a>, trailer. <span class="nowrap">Busan International Film Festival 2026.</span></figcaption>
+</figure>
+
 <section class="list">
   <h2>Features</h2>
   <ul>
